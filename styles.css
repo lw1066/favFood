@@ -1,0 +1,219 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(70deg, rgb(0, 0, 0), rgb(39, 38, 38));
+    padding: 0px 5%;
+    color: orange;
+    height: 10rem;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav li {
+    padding: 0px 1.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: orange;
+    text-shadow: 1px 1px 2px rgb(237, 186, 17);
+    font-size: 1.25rem;
+}
+
+header nav a:hover {
+    color: aliceblue;
+}
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29,26,27);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#side-drawer:target {
+    display: block;
+}
+ 
+#side-drawer header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 5%;
+    height: 6rem;
+    margin: 0;
+}
+#side-drawer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 0;
+    padding: 4rem 1rem;
+}
+
+#side-drawer ul a {
+    color: orange;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#side-drawer li {
+    padding: 2rem;
+}
+
+#page-logo a {
+  font-weight: 700px;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px white;
+  font-size: 2.75rem;
+  color: orange;
+}
+
+#page-logo a:hover {
+    color: aliceblue;
+}
+
+.menu-btn{
+    width: 2rem;
+    height: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+   
+}
+
+body {
+    background: linear-gradient(70deg, rgb(26, 25, 25), rgb(49, 46, 46));
+    font-family: "Alkatra", sans-serif;
+    margin: 0;
+}
+
+body h1 {
+    color: orange;
+    text-align: center;
+    font-size: 5rem;
+}
+
+#best_bits_list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  border-color: orange;
+  border-style: groove;
+  border-radius: 6px;
+  width: 270px;
+  background: linear-gradient(45deg, rgb(240, 160, 111), orange);
+  overflow: hidden;
+}
+
+.food img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(49, 46, 46);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.food a {
+  align-items: center;
+  text-decoration: none;
+  color: rgb(49, 46, 46);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 6px;
+  margin: 0 1rem 1rem 0;
+  display: flex;
+  margin-left: auto;
+}
+
+.food a:hover {
+  background-color: rgb(164, 109, 8, 0.6);
+  color: aliceblue;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 10px, 0px;
+  margin:  10rem 0 0 0;
+  box-shadow: 0 100vh 0 100vh rgb(0,0,0);
+    
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 50%;
+  width: 50%;
+}
+
+@media (max-width: 48rem) {
+  #best_bits_list {
+    grid-template-columns: 1fr;
+  }
+
+  body h1 {
+    font-size: 3rem;
+  }
+
+  header nav {
+    display: none;
+  }
+  header{
+    height: 6rem;
+  }
+  .menu-btn {
+    display: flex  }
+}
+
+@media (min-width: 75rem ) {
+    #best_bits_list {
+        grid-template-columns: 1fr 1fr 1fr;
+      } 
+}
